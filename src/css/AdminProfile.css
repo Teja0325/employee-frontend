@@ -1,0 +1,196 @@
+.admin-profile-page {
+  min-height: calc(100vh - 70px);
+  padding: 40px;
+  background: #f4f6fa;
+}
+
+.admin-profile-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+
+.admin-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-profile-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #4b0082,
+    #6d28d9
+  );
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  box-shadow: 0 6px 15px rgba(75, 0, 130, 0.25);
+}
+
+.admin-profile-header h1 {
+  margin: 0;
+
+  font-size: 28px;
+
+  color: #172033;
+}
+
+.admin-profile-header p {
+  margin-top: 6px;
+
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+/* SECTION */
+
+.admin-profile-section {
+  margin-top: 30px;
+}
+
+.admin-profile-section h2 {
+  margin-bottom: 20px;
+
+  font-size: 20px;
+
+  color: #4b0082;
+}
+
+/* GRID */
+
+.admin-profile-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+/* FIELD */
+
+.admin-profile-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  padding: 16px 18px;
+
+  background: #f8f9fc;
+
+  border: 1px solid #e8eaf0;
+
+  border-radius: 10px;
+}
+
+.admin-profile-field label {
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #6b7280;
+}
+
+.admin-profile-field span {
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #172033;
+
+  word-break: break-word;
+}
+
+/* ROLE */
+
+.admin-role {
+  width: fit-content;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  background: #eee6ff;
+
+  color: #5b21b6 !important;
+
+  font-size: 12px !important;
+
+  font-weight: 700 !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .admin-profile-page {
+    padding: 20px;
+  }
+
+  .admin-profile-card {
+    padding: 25px;
+  }
+
+  .admin-profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-profile-avatar {
+    width: 60px;
+    height: 60px;
+
+    font-size: 24px;
+  }
+
+  .admin-profile-header h1 {
+    font-size: 23px;
+  }
+}
+.field-requirement {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+    color: #667085;
+}
+
+.error-text {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #dc2626;
+}
+
+.input-error {
+    border-color: #dc2626 !important;
+}
+
+.form-submit-error {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #dc2626;
+    font-size: 13px;
+}

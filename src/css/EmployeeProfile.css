@@ -1,0 +1,34 @@
+.profile-page {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.profile-card {
+    width: 700px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.profile-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4b0082;
+}
+
+.profile-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-card td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-card td:first-child {
+    width: 40%;
+    font-weight: bold;
+}

@@ -1,0 +1,103 @@
+.project-form-page {
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.project-form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-form-header {
+  margin-bottom: 25px;
+}
+
+.project-form-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.project-form-header p {
+  color: #666;
+  margin-top: 6px;
+}
+
+.project-form-error {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #5b21b6;
+}
+
+.project-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.cancel-project-btn {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.cancel-project-btn:hover {
+  background: #4b5563;
+}
+
+.save-project-btn {
+  background: #5b21b6;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.save-project-btn:hover {
+  background: #4c1d95;
+}
+
+.save-project-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

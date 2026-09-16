@@ -1,0 +1,669 @@
+/* ======================================================
+   PROJECT PAGE
+====================================================== */
+
+.project-page {
+  padding: 35px 40px;
+  min-height: calc(100vh - 80px);
+  box-sizing: border-box;
+  background: #f5f7fb;
+}
+
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.project-header-text h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #171717;
+}
+
+.project-header-text p {
+  margin: 7px 0 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* ======================================================
+   ADD PROJECT BUTTON
+====================================================== */
+
+.add-project-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #5b21b6;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.add-project-btn:hover {
+  background: #4c1d95;
+  transform: translateY(-1px);
+}
+
+.add-project-icon {
+  font-size: 20px;
+  line-height: 14px;
+}
+
+
+/* ======================================================
+   ERROR
+====================================================== */
+
+.project-error {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+
+/* ======================================================
+   TABLE CARD
+====================================================== */
+
+.project-table-card {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+
+/* ======================================================
+   TABLE SCROLLER
+====================================================== */
+
+.project-table-scroll {
+  width: 100%;
+  max-height: 620px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+
+/* ======================================================
+   CUSTOM SCROLLBAR
+====================================================== */
+
+.project-table-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.project-table-scroll::-webkit-scrollbar-track {
+  background: #f1f3f6;
+}
+
+.project-table-scroll::-webkit-scrollbar-thumb {
+  background: #b7bcc5;
+  border-radius: 10px;
+}
+
+.project-table-scroll::-webkit-scrollbar-thumb:hover {
+  background: #8f96a3;
+}
+
+
+/* ======================================================
+   TABLE
+====================================================== */
+
+.project-table {
+  width: max-content;
+  min-width: 1750px;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+
+/* ======================================================
+   TABLE HEADER
+====================================================== */
+
+.project-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 15px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+
+/* ======================================================
+   TABLE BODY
+====================================================== */
+
+.project-table tbody td {
+  padding: 16px 14px;
+  color: #334155;
+  border-bottom: 1px solid #edf0f4;
+  vertical-align: middle;
+  background: white;
+}
+
+
+/* ======================================================
+   ROW HOVER
+====================================================== */
+
+.project-table tbody tr:hover td {
+  background: #fafbff;
+}
+
+
+/* ======================================================
+   COLUMN WIDTHS
+====================================================== */
+
+.col-id {
+  width: 90px;
+  min-width: 90px;
+}
+
+.col-project-name {
+  width: 180px;
+  min-width: 180px;
+}
+
+.col-employee-id {
+  width: 110px;
+  min-width: 110px;
+}
+
+.col-employee-name {
+  width: 170px;
+  min-width: 170px;
+}
+
+.col-department {
+  width: 150px;
+  min-width: 150px;
+}
+
+.col-skills {
+  width: 180px;
+  min-width: 180px;
+}
+
+.col-headcount {
+  width: 120px;
+  min-width: 120px;
+}
+
+.col-team {
+  width: 200px;
+  min-width: 200px;
+}
+
+.col-assignment-status {
+  width: 160px;
+  min-width: 160px;
+}
+
+.col-progress {
+  width: 170px;
+  min-width: 170px;
+}
+
+.col-remaining {
+  width: 150px;
+  min-width: 150px;
+}
+
+.col-status {
+  width: 150px;
+  min-width: 150px;
+}
+
+.col-date {
+  width: 125px;
+  min-width: 125px;
+}
+
+.col-description {
+  width: 320px;
+  min-width: 320px;
+}
+
+.col-employee-status {
+  width: 160px;
+  min-width: 160px;
+}
+
+.col-project-status {
+  width: 160px;
+  min-width: 160px;
+}
+
+.col-actions {
+  width: 260px;
+  min-width: 260px;
+}
+
+
+/* ======================================================
+   PROJECT NAME
+====================================================== */
+
+.project-name-cell {
+  font-weight: 600;
+  color: #1e293b !important;
+}
+
+
+/* ======================================================
+   DESCRIPTION
+====================================================== */
+
+.description-cell {
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+}
+
+.description-text {
+  width: 100%;
+  line-height: 1.5;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+
+/* ======================================================
+   PROGRESS
+====================================================== */
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-bar-background {
+  width: 85px;
+  height: 7px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #5b21b6;
+  border-radius: 20px;
+}
+
+.progress-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+}
+
+
+/* ======================================================
+   REMAINING
+====================================================== */
+
+.remaining-value {
+  font-weight: 600;
+  color: #475569;
+}
+
+
+/* ======================================================
+   STATUS BADGES
+====================================================== */
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-badge.not_started {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.status-badge.in_progress {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.status-badge.completed {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.on_hold {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+
+/* ======================================================
+   EMPLOYEE STATUS
+====================================================== */
+
+.employee-status {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.employee-status.active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.employee-status.working {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.employee-status.inactive {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.employee-status.on_leave {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+
+/* ======================================================
+   PROJECT STATUS
+====================================================== */
+
+.project-status {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.project-status.active {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.project-status.completed {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.project-status.in_progress {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.project-status.on_hold {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+
+/* ======================================================
+   ACTIONS
+====================================================== */
+
+.actions-cell {
+  white-space: nowrap;
+}
+
+.edit-project-btn,
+.delete-project-btn {
+  border: none;
+  padding: 8px 13px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 7px;
+  transition: 0.2s ease;
+}
+
+.edit-project-btn {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.edit-project-btn:hover {
+  background: #ddd6fe;
+}
+
+.delete-project-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.delete-project-btn:hover {
+  background: #fecaca;
+}
+
+.assign-team-btn {
+  background: #e0e7ff;
+  color: #4338ca;
+  border: none;
+  padding: 8px 13px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 7px;
+  transition: 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.assign-team-btn:hover {
+  background: #c7d2fe;
+}
+
+.assign-team-btn.pending-action {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+  font-weight: 700;
+  animation: pulseButton 2s infinite ease-in-out;
+}
+
+.assign-team-btn.pending-action:hover {
+  background: #fde68a;
+}
+
+@keyframes pulseButton {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.skills-badge {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.assignment-badge {
+  display: inline-flex;
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.assignment-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.assignment-badge.assigned {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.team-pill {
+  background: #f1f5f9;
+  color: #1e293b;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 2px 3px;
+  border: 1px solid #e2e8f0;
+}
+
+
+/* ======================================================
+   NO PROJECTS
+====================================================== */
+
+.no-projects {
+  text-align: center !important;
+  padding: 50px !important;
+  color: #64748b !important;
+  font-size: 15px;
+}
+
+
+/* ======================================================
+   LOADING
+====================================================== */
+
+.project-loading {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #64748b;
+}
+
+.project-spinner {
+  width: 35px;
+  height: 35px;
+  border: 4px solid #e5e7eb;
+  border-top: 4px solid #5b21b6;
+  border-radius: 50%;
+  animation: projectSpin 0.8s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes projectSpin {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 900px) {
+
+  .project-page {
+    padding: 25px 20px;
+  }
+
+  .project-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .project-header-text h2 {
+    font-size: 26px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .project-page {
+    padding: 20px 15px;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-project-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+}
